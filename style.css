@@ -1,0 +1,148 @@
+body{
+   
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+}
+img{
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.button-container {
+    display: flex;
+    gap: 5px; 
+}
+input{
+    width: 65%;
+    padding: 18px;
+    border-radius: 15px;
+}
+.styled-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.styled-button::before {
+    content: "+";
+    font-size: 20px;
+    transition: transform 0.2s;
+    color: #fff;
+}
+
+.styled-button:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.styled-button:hover::before {
+    transform: scale(1.2);
+}
+.delete-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #DC3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.delete-button::before {
+    content: "✖";
+    font-size: 20px;
+    transition: transform 0.2s;
+    color: #fff;
+}
+
+.delete-button:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.delete-button:hover::before {
+    transform: scale(1.2);
+}
+.todo-item {
+    list-style-type: none;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: blue; 
+    color: white;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+    background-color: rgb(93, 93, 212); 
+}
+
+.delete-btn, .edit-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.edit-btn {
+    background-color: #007bff;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
